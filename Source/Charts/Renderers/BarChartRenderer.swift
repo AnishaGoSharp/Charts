@@ -439,8 +439,8 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
                         {
                             var px = x
                             var py = val >= 0.0
-                                ? (rect.origin.y + posOffset)
-                                : (rect.origin.y + rect.size.height + negOffset)
+                                ? (rect.origin.y)
+                                : (rect.origin.y + rect.size.height)
                             
                             px += iconsOffset.x
                             py += iconsOffset.y
