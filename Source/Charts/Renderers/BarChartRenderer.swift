@@ -445,12 +445,14 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
                             px += iconsOffset.x
                             py += iconsOffset.y
                             
+                            let imgSize = CGSize(width: rect.size.width, height: icon.size.height)
+
                             ChartUtils.drawImage(
                                 context: context,
                                 image: icon,
                                 x: px,
                                 y: py,
-                                size: icon.size)
+                                size: imgSize)
                         }
                     }
                 }
